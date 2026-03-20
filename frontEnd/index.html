@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>My Diary</title>
   <link rel="stylesheet" href="index.css" />
+    <script src="app.js" defer></script>
 </head>
 <body>
   <main class="diary-app">
@@ -14,11 +15,7 @@
 
     <section class="diary-controls">
       <div class="search-wrapper">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Search entries.."
-          aria-label="Search entries"
+        <input type="text" id="search-input" placeholder="Search entries.." aria-label="Search entries"
         />
       </div>
 
@@ -36,29 +33,28 @@
       </div>
     </section>
 
-    <section class="entries-list" id="entries-list">
+     <section class="entries-list" id="entries-list">
+      <!-- These entry cards will be generated from your database/API -->
       <article class="entry-card">
         <header class="entry-header">
-          <h2 class="entry-title">TITLE</h2>
+          <h2 class="entry-title">Diary Title</h2>
         </header>
 
-        <p class="entry-preview">
-          start of entry maybe?
-        </p>
+        <p class="entry-preview">       
+            Dear Diary...        </p>
 
         <footer class="entry-meta">
           <span class="entry-category">Category</span>
           <span class="entry-date">date</span>
 
           <div class="entry-actions">
-            <button class="btn btn-secondary entry-edit">Edit</button>
-            <button class="btn btn-danger entry-delete">Delete</button>
+            <button class="btn btn-secondary">Edit</button>
+            <button class="btn btn-delete">Delete</button>
           </div>
         </footer>
       </article>
     </section>
   </main>
 
-  <script src="app.js"></script>
 </body>
 </html>
