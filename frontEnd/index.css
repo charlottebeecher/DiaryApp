@@ -1,0 +1,91 @@
+/* --- Layout basics --- */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.diary-app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Header --- */
+.diary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background: #4b4b4b;
+  color: white;
+}
+
+.btn-secondary {
+  background: #ddd;
+}
+
+.btn-danger {
+  background: #ff5c5c;
+  color: white;
+}
+
+/* --- Search + Filter --- */
+.diary-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#search-input,
+#category-filter {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+
+/* --- Entry Cards --- */
+.entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.entry-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.entry-header h2 {
+  margin: 0 0 10px 0;
+}
+
+.entry-preview {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 8px;
+}

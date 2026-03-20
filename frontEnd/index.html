@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Diary</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main class="diary-app">
+    <header class="diary-header">
+      <h1>My diary</h1>
+<button class="btn btn-primary" onclick="window.location.href='newEntry.html'"> New entry </button>  
+  </header>
+
+    <section class="diary-controls">
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search entries.."
+          aria-label="Search entries"
+        />
+      </div>
+
+      <div class="filter-wrapper">
+        <label for="category-filter" class="visually-hidden">Filter by category</label>
+        <select id="category-filter">
+             <option value="">Select Category</option>
+             <option value="work">Work</option>
+             <option value="personal">Personal</option>
+             <option value="health">Health</option>
+             <option value="travel">Travel</option>
+            <option value="other">Other</option>
+
+        </select>
+      </div>
+    </section>
+
+    <section class="entries-list" id="entries-list">
+      <article class="entry-card">
+        <header class="entry-header">
+          <h2 class="entry-title">TITLE</h2>
+        </header>
+
+        <p class="entry-preview">
+          start of entry maybe?
+        </p>
+
+        <footer class="entry-meta">
+          <span class="entry-category">Category</span>
+          <span class="entry-date">date</span>
+
+          <div class="entry-actions">
+            <button class="btn btn-secondary entry-edit">Edit</button>
+            <button class="btn btn-danger entry-delete">Delete</button>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
